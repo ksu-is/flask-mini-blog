@@ -1,3 +1,2 @@
 # flask-mini-blog
-A mini blog via Flask. This blog will be a simple travel blog that will also use web scraping to compare hotel prices. &amp; Bootstrap
-This is a work in progress.
+This blog is made using Flask and will incorpate web scraping. The goal is to create a simple but eye catching travel blog that can be used by anyone looking for more information on their future destinations, while sharing the travel experiences of Faith and Suriyah. When the blog is successfully ran, it is expected to show organized tabs that are easy to read. One of the tabs shall include a scraped webpage of reviews or hotels. 
