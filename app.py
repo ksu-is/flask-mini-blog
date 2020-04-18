@@ -8,10 +8,13 @@ def index():
    return render_template('home.html')
 
 
-@app.route('/travel')
-def travel():
-    return render_template('travel.html')
+@app.route('/careers')
+def careers():
+    return render_template('careers.html')
 
+@app.route('/resume')
+def resume():
+    return render_template('resume.html')
 
 if __name__ == "__main__":
     app.run(debug = True)
