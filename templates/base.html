@@ -7,29 +7,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/mainpage.css') }}">
 <title>my blog</title>
 </head>
 <body>
-    <div class="container">
-        
+    
+     <div class="container">
+      
+       
         <!--navbar-->
         <ul class="nav nav-tabs nav-stacked">
             <li class="nav-item">
                 <a href="/home" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-                <a href="{{url_for('careers')}}" class="nav-link">Careers</a>
+                <a href="/careers" class="nav-link">Careers</a>
             </li>
             <li class="nav-item">
                 <a href="/resume" class="nav-link">Resume</a>
             </li>
         </ul>
         <!--navbar-->
-    
         
         {% block content %}
         {% endblock content %}
-
+   
         <footer >
                 <p class="text-center">copyright 2019</p> 
         </footer>
