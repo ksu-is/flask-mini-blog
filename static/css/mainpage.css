@@ -14,3 +14,27 @@ header {
 .list {
   text-align: center;
 }
+
+.books {
+  width: 250px;
+  height:250px;
+}
+
+.coffee {
+  width: 250px;
+  height: 250px;
+}
+
+.glasses {
+  width: 250px;
+  height: 250px;
+}
+.notes {
+  width: 250px;
+  height: 250px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
