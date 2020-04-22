@@ -38,3 +38,12 @@ header {
   width: 200px;
   height: 200px;
 }
+
+.toplist {
+  text-align: left;
+}
+
+cite {
+  font-style: italic;
+  text-align: center;
+}
