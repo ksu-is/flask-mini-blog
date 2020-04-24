@@ -1,7 +1,12 @@
+import datetime
 from flask import Flask, render_template, request
+import database
 
 
 app = Flask(__name__)
+##entries = []
+
+database.create_tables()
 
 @app.route('/')
 def index():
@@ -12,10 +17,15 @@ def index():
 def careers():
     return render_template('careers.html')
 
-@app.route('/resume')
-def resume():
-    return render_template('resume.html')
-
+@app.route('/forms', methods=["GET", "POST"])
+def forms():
+    if request.method == "POST":
+        entry_content = request.form.get("content")
+        database.create_entry(entry_content, datetime.datetime.today().strftime("%b %d"))
+        ##entries.append({"content": entry_content, "date": datetime.datetime.today().strftime("%b %d")})
+        
+    return render_template("forms.html", entries=database.retrieve_entries())
+    
 if __name__ == "__main__":
     app.run(debug = True)
     

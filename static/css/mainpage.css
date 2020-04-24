@@ -47,3 +47,60 @@ cite {
   font-style: italic;
   text-align: center;
 }
+
+.container2 {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+
+form textarea {
+  width: 100%;
+  font-family: Lato;
+  font-size: 18px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #F3F6F6;
+  margin-bottom: 10px;
+
+}
+
+form input[type="submit"] {
+  background-color: rgb(227, 161, 166);
+  border: none;
+  font-size: 18px;
+  font-family: Lato;
+  font-weight: bold;
+  padding: 5px 50px;
+  border-radius: 20px;
+  color: white;
+
+}
+
+.entry {
+  margin-top: 50px;
+}
+
+.entry-title {
+  font-size: 16px;
+}
+
+.entry-date {
+  color: #5c6b70;
+  align-items: right;
+}
+
+.entry-content {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.career {
+  color: grey
+}
