@@ -56,7 +56,7 @@ cite {
 form {
   display: flex;
   flex-direction: column;
-  align-items: right;
+  align-items: left;
 }
 
 form textarea {
@@ -103,4 +103,8 @@ form input[type="submit"] {
 
 .career {
   color: grey
+}
+
+.submit {
+  align-items: right;
 }
