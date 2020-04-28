@@ -11,6 +11,12 @@ header {
   background-color: rgb(227, 161, 166);
 }
 
+img {
+  padding-right: 20px;
+  width: 200px;
+  height: 200px;
+}
+
 .list {
   text-align: center;
 }
