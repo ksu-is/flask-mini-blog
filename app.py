@@ -21,9 +21,10 @@ def careers():
 def forms():
     if request.method == "POST":
         entry_content = request.form.get("content")
+        ##content will be associated with textarea
         database.create_entry(entry_content, datetime.datetime.today().strftime("%b %d"))
-        ##entries.append({"content": entry_content, "date": datetime.datetime.today().strftime("%b %d")})
         
+     ##Gets user back to form page so that they can type more   
     return render_template("forms.html", entries=database.retrieve_entries())
     
 if __name__ == "__main__":
